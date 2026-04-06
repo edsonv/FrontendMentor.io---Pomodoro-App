@@ -65,7 +65,10 @@ function App() {
 		<main className={`app-container font-${settings.font} accent-${settings.color}`}>
 			<h1 className='logo'>pomodoro</h1>
 
-			<div className='tab-container'>
+			<div
+				className='tab-container'
+				role='tablist'
+				arira-label='Timer presets'>
 				<TabItem
 					mode='pomodoro'
 					activeMode={mode}
@@ -97,6 +100,7 @@ function App() {
 			<button
 				className='settings-btn'
 				onClick={() => setShowSettings(true)}>
+				<span className='sr-only'>Settings</span>
 				<SettingsIcon
 					size={28}
 					strokeWidth={2.5}
