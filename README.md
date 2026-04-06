@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/edsonv/pomodoro-app)
-- Live Site URL: [Vercel Deployment](https://pomodoro-app-one.vercel.app/)
+- Solution URL: [GitHub Repository](https://github.com/edsonv/FrontendMentor.io---Pomodoro-App)
+- Live Site URL: [Vercel Deployment](https://frontend-mentor-io-pomodoro-app.vercel.app/)
 
 ## My process
 
