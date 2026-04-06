@@ -68,7 +68,7 @@ function App() {
 			<div
 				className='tab-container'
 				role='tablist'
-				arira-label='Timer presets'>
+				aria-label='Timer presets'>
 				<TabItem
 					mode='pomodoro'
 					activeMode={mode}

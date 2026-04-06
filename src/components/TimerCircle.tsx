@@ -1,3 +1,5 @@
+import { toIsoDuration } from '../utils';
+
 interface TimerCircleProps {
 	timeLeft: number;
 	maxTime: number;
@@ -42,12 +44,13 @@ const TimerCircle = ({ timeLeft, maxTime, isActive, onToggle, formattedTime }: T
 				<div className='timer-inner-content'>
 					<time
 						className='timer-display'
-						dateTime='PT25M0S'
+						dateTime={toIsoDuration(timeLeft)}
 						aria-live='polite'>
 						{formattedTime}
 					</time>
 
 					<button
+						type='button'
 						className='timer-toggle'
 						onClick={onToggle}>
 						{isActive ? 'PAUSE' : timeLeft === 0 ? 'RESTART' : 'START'}
