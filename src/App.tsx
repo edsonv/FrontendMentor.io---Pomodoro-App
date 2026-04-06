@@ -98,6 +98,7 @@ function App() {
 			/>
 
 			<button
+				type='button'
 				className='settings-btn'
 				onClick={() => setShowSettings(true)}>
 				<span className='sr-only'>Settings</span>
